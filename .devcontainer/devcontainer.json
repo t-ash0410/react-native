@@ -1,0 +1,16 @@
+{
+    "name": "react-native",
+    "dockerComposeFile": [
+        "../docker-compose.yml"
+    ],
+    "service": "app",
+    "workspaceFolder": "/usr/src/app",
+    "extensions": [],
+    "settings": {
+        "editor.tabSize": 2,
+        "files.insertFinalNewline": true,
+        "files.trimFinalNewlines": true,
+        "terminal.integrated.shell.linux": "/bin/bash"
+    },
+    "shutdownAction": "none"
+}

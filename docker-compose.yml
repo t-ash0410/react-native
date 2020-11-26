@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  app:
+    build: 
+      context: ./.devcontainer/app
+      dockerfile: Dockerfile
+    container_name: react-native-app
+    volumes:
+      - ./:/usr/src/app
+    env_file: ./.devcontainer/app/.env
+    command: /bin/bash -c "while sleep 1000; do :; done"
+    stdin_open: true
+    ports:
+      - "19000:19000"
+      - "19001:19001"
+      - "19002:19002" 
